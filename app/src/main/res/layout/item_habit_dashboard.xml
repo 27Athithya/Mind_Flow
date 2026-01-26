@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/surface">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/habit_item_background"
+        android:foreground="?attr/selectableItemBackground">
+
+        <!-- Habit Icon -->
+        <FrameLayout
+            android:id="@+id/habit_icon_container"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/habit_icon_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tv_habit_emoji"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="🎯"
+                android:textColor="@color/primary"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <!-- Habit Name -->
+        <TextView
+            android:id="@+id/tv_habit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Morning Meditation"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/habit_icon_container"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cb_habit_done" />
+
+        <LinearLayout
+            android:id="@+id/ll_habit_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/tv_habit_name"
+            app:layout_constraintStart_toStartOf="@id/tv_habit_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_habit_name">
+
+            <!-- Habit Streak -->
+            <TextView
+                android:id="@+id/tv_habit_streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔥 5 day streak"
+                android:textColor="@color/primary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Progress Text -->
+            <TextView
+                android:id="@+id/tv_habit_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="4/7 this week"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/pb_habit_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="60"
+            android:progressBackgroundTint="@color/surface_variant"
+            android:progressTint="@color/primary"
+            app:layout_constraintEnd_toEndOf="@id/tv_habit_name"
+            app:layout_constraintStart_toStartOf="@id/tv_habit_name"
+            app:layout_constraintTop_toBottomOf="@id/ll_habit_progress" />
+
+        <!-- Checkbox -->
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cb_habit_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            app:buttonTint="@color/primary"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete_habit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/btn_delete_habit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete habit"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

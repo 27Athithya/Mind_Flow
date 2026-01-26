@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Circular Progress Bar -->
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circular_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cpb_background_progressbar_color="@color/surface_variant"
+            app:cpb_background_progressbar_width="3dp"
+            app:cpb_progressbar_color="@color/primary"
+            app:cpb_progressbar_width="4dp"
+            app:cpb_round_border="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Checkmark overlay for completed habits -->
+        <ImageView
+            android:id="@+id/iv_checkmark"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_check_circle"
+            android:tint="@color/success"
+            app:layout_constraintStart_toStartOf="@id/circular_progress"
+            app:layout_constraintEnd_toEndOf="@id/circular_progress"
+            app:layout_constraintTop_toTopOf="@id/circular_progress"
+            app:layout_constraintBottom_toBottomOf="@id/circular_progress"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <!-- Habit Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/btn_habit_completed"
+            app:layout_constraintStart_toEndOf="@id/circular_progress"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_habit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                tools:text="Morning Meditation" />
+
+            <TextView
+                android:id="@+id/tv_habit_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp"
+                tools:text="Daily mindfulness practice" />
+
+            <TextView
+                android:id="@+id/tv_habit_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/primary"
+                android:layout_marginTop="4dp"
+                tools:text="5/7 days completed this week" />
+
+        </LinearLayout>
+
+        <!-- Complete Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_habit_completed"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:icon="@drawable/ic_check_circle_outline"
+            app:iconTint="@color/primary"
+            app:iconSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Streak Counter -->
+        <TextView
+            android:id="@+id/tv_streak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent_yellow"
+            android:background="@drawable/bg_streak"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintStart_toStartOf="@id/tv_habit_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="🔥 5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.fragments.HomeDashboardFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home_dashboard" >
+        <action
+            android:id="@+id/action_navigation_home_to_waterDetailsFragment"
+            app:destination="@id/waterDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/waterDetailsFragment"
+        android:name="com.example.myapplication.fragments.WaterDetailsFragment"
+        android:label="Water Details"
+        tools:layout="@layout/fragment_water_details" >
+        <action
+            android:id="@+id/action_waterDetailsFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_habits"
+        android:name="com.example.myapplication.fragments.HabitsFragment"
+        android:label="@string/nav_habits"
+        tools:layout="@layout/fragment_habits" >
+        <action
+            android:id="@+id/action_navigation_habits_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_mood"
+        android:name="com.example.myapplication.fragments.MoodJournalFragment"
+        android:label="@string/nav_mood"
+        tools:layout="@layout/fragment_mood_journal" >
+        <action
+            android:id="@+id/action_navigation_mood_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.myapplication.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_steps"
+        android:name="com.example.myapplication.fragments.StepCounterFragment"
+        android:label="Step Counter"
+        tools:layout="@layout/fragment_step_counter" >
+        <action
+            android:id="@+id/action_navigation_steps_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+</navigation>

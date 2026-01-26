@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">MindFlow</string>
+
+    <string name="tagline">Your Daily Wellness Companion</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Full Name</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="terms_conditions">I agree to the Terms &amp; Conditions</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_habits">Habits</string>
+    <string name="nav_mood">Mood</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_steps">Steps</string>
+
+    <string name="welcome_message">%1$s, %2$s!</string>
+    <string name="daily_progress">Daily Progress</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="glasses_today">%1$d/%2$d glasses today</string>
+    <string name="mood_today">Today\'s Mood</string>
+    <string name="mood_trends">Mood Trends</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="view_all_habits">View All Habits</string>
+    <string name="log_mood">Log Mood</string>
+    <string name="add_water">Add Water</string>
+
+    <string name="add_habit">Add Habit</string>
+    <string name="habit_name">Habit Name</string>
+    <string name="habit_category">Category</string>
+    <string name="habit_frequency">Frequency</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="save_habit">Save Habit</string>
+    <string name="edit_habit">Edit Habit</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="mark_complete">Mark Complete</string>
+    <string name="mark_incomplete">Mark Incomplete</string>
+    <string name="habit_streak">Streak: %1$d days</string>
+    <string name="habit_deleted">Habit deleted</string>
+    <string name="undo">Undo</string>
+
+    <string name="category_exercise">Exercise</string>
+    <string name="category_mindfulness">Mindfulness</string>
+    <string name="category_nutrition">Nutrition</string>
+    <string name="category_sleep">Sleep</string>
+    <string name="category_other">Other</string>
+
+    <string name="add_mood_entry">Add Mood Entry</string>
+    <string name="mood_level">Mood Level</string>
+    <string name="mood_note">Note (Optional)</string>
+    <string name="mood_tags">Tags</string>
+    <string name="save_mood">Save Mood</string>
+    <string name="mood_history">Mood History</string>
+
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="hydration_reminders">Hydration Reminders</string>
+    <string name="reminder_interval">Reminder Interval</string>
+    <string name="daily_water_goal">Daily Water Goal</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="export_data">Export Data</string>
+    <string name="logout">Logout</string>
+
+    <string name="hydration_reminder_title">💧 Time to Hydrate!</string>
+    <string name="hydration_reminder_text">Remember to drink water and stay healthy</string>
+    <string name="log_intake">Log Intake</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="error_empty_field">This field is required</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_weak_password">Password must be at least 6 characters</string>
+    <string name="error_login_failed">Invalid email or password</string>
+    <string name="success_registration">Account created successfully</string>
+    <string name="success_login">Welcome back!</string>
+</resources>

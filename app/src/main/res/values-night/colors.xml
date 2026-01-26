@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Color Palette - Same names as light mode for automatic switching -->
+    <color name="primary">#66BB6A</color> <!-- Slightly darker mint green -->
+    <color name="primary_light">#A5D6A7</color> <!-- Light mint green for dark mode -->
+    <color name="primary_variant">#4CAF50</color>
+    <color name="secondary">#64B5F6</color> <!-- Soft sky blue for dark mode -->
+    <color name="secondary_variant">#42A5F5</color>
+    <color name="tertiary">#BA68C8</color> <!-- Soft lavender purple for dark mode -->
+    <color name="background">#121212</color> <!-- Material dark background -->
+    <color name="surface">#1E1E1E</color> <!-- Dark surface -->
+    <color name="error">#CF6679</color> <!-- Soft red for dark mode -->
+    <color name="success">#66BB6A</color> <!-- Mint green for dark mode -->
+    <color name="success_light">#2E2E2E</color> <!-- Dark mint green background -->
+    <color name="text_primary">#E0E0E0</color> <!-- Light text for dark backgrounds -->
+    <color name="text_secondary">#B0B0B0</color> <!-- Secondary light text -->
+    <color name="surface_variant">#2C2C2C</color> <!-- Dark surface variant -->
+    <color name="outline">#3C3C3C</color> <!-- Dark gray for outlines -->
+
+    <!-- Additional colors for mood tracking (Dark versions) -->
+    <color name="mood_very_sad">#E91E63</color> <!-- Darker pink -->
+    <color name="mood_sad">#FF9800</color> <!-- Darker orange -->
+    <color name="mood_neutral">#FFC107</color> <!-- Darker yellow -->
+    <color name="mood_happy">#4CAF50</color> <!-- Darker green -->
+    <color name="mood_very_happy">#66BB6A</color> <!-- Mint green -->
+
+    <!-- Accent colors for wellness theme (Dark versions) -->
+    <color name="accent_yellow">#FFC107</color>
+    <color name="accent_blue">#2196F3</color>
+    <color name="accent_green">#4CAF50</color>
+
+    <!-- Default Material colors for compatibility -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#F5F5F5</color> <!-- Slightly off-white for better dark mode readability -->
+</resources>

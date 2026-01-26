@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Your Water Intake"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_water_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="8"
+        android:stepSize="1"
+        android:value="1"
+        app:labelBehavior="visible"
+        app:tickVisible="true"
+        app:thumbColor="@color/secondary"
+        app:trackColorActive="@color/secondary"
+        app:trackColorInactive="@color/surface_variant"
+        app:tickColorActive="@color/secondary"
+        app:tickColorInactive="@color/surface_variant" />
+
+    <TextView
+        android:id="@+id/tv_water_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 glass"
+        android:textSize="18sp"
+        android:textColor="@color/text_secondary"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Cancel"
+            android:textColor="@color/text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Add"
+            app:backgroundTint="@color/secondary" />
+
+    </LinearLayout>
+
+</LinearLayout>
